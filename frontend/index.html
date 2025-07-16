@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web3 模拟交易系统</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; background-color: #f5f7fa; color: #333; }
+    .container { max-width: 600px; margin: auto; }
+    input, button { padding: 0.5em; margin: 0.3em 0; width: 100%; border: 1px solid #ccc; border-radius: 4px; }
+    button { background-color: #007aff; color: white; cursor: pointer; }
+    #result { margin-top: 1em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>模拟转账</h1>
+    <input type="text" id="from" placeholder="发送方地址 (0x...)" />
+    <input type="text" id="to" placeholder="接收方地址 (0x...)" />
+    <input type="number" id="amount" placeholder="转账金额 (单位: wei)" />
+    <button onclick="sendTx()">发送交易</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
